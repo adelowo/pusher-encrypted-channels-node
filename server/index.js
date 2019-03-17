@@ -31,7 +31,7 @@ app.post('/pusher/auth', function(req, res) {
 
 app.post('/feed', (req, res) => {
   const title = req.body.title;
-  const body = req.body.body;
+  const body = req.body.content;
 
   if (title === undefined) {
     res
@@ -75,7 +75,7 @@ app.post('/feed', (req, res) => {
   }
 
   titles.push(title.trim());
-  pusher.trigger('private-encrypted-realtime-feeds', 'posts', {
+  pusher.trigger('private-encrypted-feeds', 'items', {
     title: title.trim(),
     body: body.trim(),
     time: new Date(),

@@ -78,10 +78,8 @@
       </div>
 `;
 
-  // const APP_KEY = 'PUSHER_APP_KEY';
-  // const APP_CLUSTER = 'eu';
-  const APP_KEY = '3b65aa197f334949f0ef';
-  const APP_CLUSTER = 'eu';
+  const APP_KEY = 'PUSHER_APP_KEY';
+  const APP_CLUSTER = 'PUSHER_APP_CLUSTER';
 
   const pusher = new Pusher(APP_KEY, {
     cluster: APP_CLUSTER,

@@ -40,14 +40,10 @@
             return;
           }
 
-          if (response.status === 208) {
-            message = 'Feed item already exists';
-          } else {
-            message = response.statusText;
-          }
-
-          isDangerDiv.innerHTML = message;
-          isDangerDiv.classList.remove('hidden');
+          response.json().then(data => {
+            isDangerDiv.innerHTML = data.message;
+            isDangerDiv.classList.remove('hidden');
+          });
         },
         function(error) {
           isDangerDiv.innerHTML = 'Could not create feed item';

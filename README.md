@@ -1,6 +1,6 @@
 # pusher-encrypted-channels-node
 
-An introduction to end to end encryption in encrypted channels with Pusher Channels and NodeJS.
+An introduction to end to end encryption in encrypted channels with Pusher Channels and NodeJS. https://pusher.com/tutorials/end-to-end-encryption-node
 
 
 #### Getting started
